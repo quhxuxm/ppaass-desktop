@@ -1,20 +1,15 @@
-import { Component } from "@angular/core";
-import { invoke } from "@tauri-apps/api/tauri";
+import { Component, OnInit } from '@angular/core';
+import { PrimeNGConfig } from 'primeng/api';
 
 @Component({
-  selector: "app-root",
-  templateUrl: "./app.component.html",
-  styleUrls: ["./app.component.css"],
+    selector: 'app-root',
+    templateUrl: './app.component.html'
 })
-export class AppComponent {
-  greetingMessage = "";
+export class AppComponent implements OnInit {
 
-  greet(event: SubmitEvent, name: string): void {
-    event.preventDefault();
+    constructor(private primengConfig: PrimeNGConfig) { }
 
-    // Learn more about Tauri commands at https://tauri.app/v1/guides/features/command
-    invoke<string>("greet", { name }).then((text) => {
-      this.greetingMessage = text;
-    });
-  }
+    ngOnInit() {
+        this.primengConfig.ripple = true;
+    }
 }
