@@ -2,6 +2,9 @@ use yew::prelude::*;
 
 #[function_component(ConfigurationForm)]
 pub(crate) fn configuration_form() -> Html {
+    let onclick = |event: MouseEvent| {
+        gloo::console::log!(format!("Receive mouse event: {event:?}"));
+    };
     html! {
         <section id="configuration_form_pannel">
             <div id="configuration_form_fields">
@@ -19,7 +22,7 @@ pub(crate) fn configuration_form() -> Html {
                 </div>
             </div>
             <div id="configuration_form_actions">
-                <button>{"Start"}</button>
+                <button {onclick}>{"Start"}</button>
             </div>
         </section>
     }
