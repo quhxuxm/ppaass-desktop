@@ -1,10 +1,10 @@
 {
   "build": {
-    "beforeDevCommand": "npm run start -- --port 1420",
-    "beforeBuildCommand": "npm run build",
+    "beforeDevCommand": "trunk serve",
+    "beforeBuildCommand": "trunk build",
     "devPath": "http://localhost:1420",
-    "distDir": "../dist/ppaass-desktop",
-    "withGlobalTauri": false
+    "distDir": "../dist",
+    "withGlobalTauri": true
   },
   "package": {
     "productName": "ppaass-desktop",
@@ -36,10 +36,10 @@
     "windows": [
       {
         "fullscreen": false,
-        "resizable": true,
+        "resizable": false,
         "title": "ppaass-desktop",
-        "width": 800,
-        "height": 600
+        "width": 353,
+        "height": 360
       }
     ]
   }
