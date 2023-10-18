@@ -1,5 +1,5 @@
 mod app;
-mod form;
+mod config_form;
 
 use app::App;
 

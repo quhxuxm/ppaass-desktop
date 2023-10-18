@@ -4,7 +4,7 @@ use wasm_bindgen::prelude::*;
 use wasm_bindgen_futures::spawn_local;
 use yew::prelude::*;
 
-use crate::form::ConfigurationForm;
+use crate::config_form::ConfigurationForm;
 
 #[wasm_bindgen]
 extern "C" {
