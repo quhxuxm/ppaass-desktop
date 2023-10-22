@@ -13,6 +13,7 @@ wasm-bindgen-futures = "0.4"
 web-sys = "0.3"
 js-sys = "0.3"
 gloo="0.10.0"
+ppaass-agent = {git = "https://github.com/quhxuxm/ppaass.git", package = "ppaass-agent",  branch = "main"}
 
 [workspace]
 members = ["src-tauri"]
