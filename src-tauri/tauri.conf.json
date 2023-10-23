@@ -1,10 +1,10 @@
 {
   "build": {
-    "beforeDevCommand": "trunk serve",
-    "beforeBuildCommand": "trunk build",
+    "beforeDevCommand": "npm run start -- --port 1420",
+    "beforeBuildCommand": "npm run build",
     "devPath": "http://localhost:1420",
-    "distDir": "../dist",
-    "withGlobalTauri": true
+    "distDir": "../dist/ppaass-desktop",
+    "withGlobalTauri": false
   },
   "package": {
     "productName": "ppaass-desktop",
