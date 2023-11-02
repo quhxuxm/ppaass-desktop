@@ -1,0 +1,30 @@
+section{
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+
+section label{
+  margin-left: 0;
+  display: block;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+section input[type="text"]{
+  margin-left: 0;
+  display: block;
+  width: 300px;
+  padding: 10px;
+}
+
+section button{
+  margin-right: 0;
+  margin-left: auto;
+  display: block;
+  padding: 10px;
+  width: 100px;
+  cursor: pointer;
+}
